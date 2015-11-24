@@ -1,8 +1,8 @@
 package com.huel.model;
 
 public class ShoppingCartItem {
-   Goods g; //ÉÌÆ·
-   int num;//¹ºÂòÊýÁ¿
+   Goods g; //ï¿½ï¿½Æ·
+   int num;//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 public Goods getGoods() {
 	return g;
 }
@@ -15,7 +15,5 @@ public int getNum() {
 public void setNum(int num) {
 	this.num = num;
 }
-   
-   
    
 }

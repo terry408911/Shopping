@@ -1,16 +1,24 @@
 package com.huel.dao;
 
-import java.util.LinkedList;
+import java.sql.ResultSet;
+
 
 import com.huel.model.Goods;
 
 public class GoodsDao {
    public static Goods getGoodsById(String id){
-	   return null;
+	   Goods good = null;
+	   MySQL mySQL = new MySQL();
+	   good = mySQL.queryById(id);
+	return good;
+	
    };
    
-   public static LinkedList<Goods> getAllGoods()
+   public static ResultSet getAllGoods()
    {
-	   return null;
+	   ResultSet goods = null;
+	   MySQL mySQL = new MySQL();
+	   mySQL.queryAll();
+	   return goods;
    }
 }
